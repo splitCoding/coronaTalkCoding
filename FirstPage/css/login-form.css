@@ -1,0 +1,36 @@
+.login-form{
+  display : flex;
+  flex-direction: column;
+  margin:0px 30px;
+}
+.login-form input{
+  transition: border-color 0.3s ease-in-out;
+}
+.login-form input[placeholder]{
+  background-color: rgb(255, 242, 242);
+  height : 50px;
+  border : none;
+  border-bottom: 1px solid rgba(0, 0, 0,0.2);
+}
+.login-form input::placeholder{
+  color : rgb(135, 135, 135);
+}
+.login-form input[value]{
+  border-radius: 2px;
+  margin-top : 15px;
+  color : black;
+  height : 50px;
+  border : none;
+  background-color: rgb(242, 221, 221);
+}
+.login-form a{
+  color : rgb(89, 89, 89);
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-form input:focus{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
