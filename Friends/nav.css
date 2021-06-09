@@ -1,0 +1,31 @@
+.nav{
+  position : fixed;
+  bottom : 0;
+}
+.nav__ul{
+  padding:20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__btn{
+  text-align: center;
+  width : 25vw;
+}
+.nav__link{
+  color : rgba(0, 0, 0, 0.6);
+  position :relative;
+}
+.nav__notification{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 19px;
+  height : 19px;
+  color : white;
+  font-weight: 400;
+  position : absolute;
+  top : -10px;
+  right : -12px;
+}

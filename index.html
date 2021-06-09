@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/firstpage.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
   <title>CoronaTalk</title>
 </head>
 <body>
@@ -22,16 +22,22 @@
     </div>
   </div>
   <header class ="main-header">
-    <h1 class="main-header__title">코로나를 미리 예방합시다</h1>
-    <p class="main-header__text">아이디가 없으시다면 회원가입 해주십시요</p>
+    <h1 class="main-header__title">코로나톡에 오신걸 환영합니다</h1>
+    <p class="main-header__text">코로나 예방을 위해 회원가입 해주십시요</p>
   </header>
-  <form class="login-form">
-    <input type="text" placeholder="Email or phone number"/>
-    <input type="password" placeholder="Password"/>
+  <form action="Friends/friends.html" class="login-form">
+    <input name="id" type="text" placeholder="Email or phone number"/>
+    <input name="password" type="password" placeholder="Password"/>
     <input type="submit" value="로그인">
     <input type="button" value="회원가입">
     <a href="#">아이디나 비밀번호를 잊어버리셧나요?</a>
   </form>
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <script>
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    document.querySelector('.js-time').textContent = `${hour} : ${minute}`
+  </script>
 </body>
 </html>
