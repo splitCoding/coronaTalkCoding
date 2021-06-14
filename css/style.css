@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
-@import "./reset.css";
-@import "./screen-header.css";
-@import '../FirstPage/css/status-bar.css';
-@import '../FirstPage/css/main-header.css';
-@import '../FirstPage/css/login-form.css';
-@import '../Friends/nav.css';
+@import "reset.css";
+
+@import "component/status-bar.css";
+@import 'component/screen-header.css';
+@import 'component/main-header.css';
+@import 'component/nav.css';
+@import 'component/user-component.css';
+
+@import 'screen/friends.css';
+@import 'screen/login-form.css';
  
 body{
   height : 200vh;

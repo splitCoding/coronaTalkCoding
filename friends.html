@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet"/>
+  <title>Friends-CoronaTalk</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>Not Infected</span>
+      <i class="fas fa-biohazard"></i>
+    </div>
+    <div class="status-bar__column">
+      <span class="js-time">00:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-syringe"></i>
+    </div>
+  </div>
+  
+  <header class="screen-header">
+    <h1 class="screen-header__title">Friends</h1>
+    <div class="screen-header__icon">
+      <span><a href="#"><i class="fas fa-search"></i></a></span>
+      <span><a href="#"><i class="fas fa-music"></i></a></span>
+      <span><a href="#"><i class="fas fa-cog"></i></a></span>
+    </div>
+  </header>
+
+  <a id="friends-display-link" href="#">
+    <i class="fas fa-info-circle"></i>Friends' Names Display<i class="fas fa-angle-right"></i>
+  </a>
+
+  <main class="friends-screen">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img class="user-component__avatar" src="https://mblogthumb-phinf.pstatic.net/MjAxODA1MjRfNDIg/MDAxNTI3MTY0MTUwMzQ1.DmEjivAyLPbRPK_WAfItfke5ouwPL8VuUr35EnWn69wg.llCyonIYx7kR0m7u8gTivPnJSZz5aD7ZhfzU9y5sGdYg.PNG.petal_rain/20180524_210138.png?type=w800">
+        <div class="user-component__text">
+          <h4 class="user-component__name">SangHyeon</h4>
+          <!-- <h6 class="user-component__subtitle">hello</h6> -->
+        </div>
+      </div>
+      <div class="user-component__column"></div>
+    </div>
+
+    <div class="friends-screen__channel">
+      <div class="friends-screen__channel__header">
+        <div class="friends-screen__channel__header__title">Channel</div>
+        <div class="friends-screen__channel__header__icon"><i class="fas fa-chevron-up"></i></div>
+      </div>
+    </div>
+
+    <div class="user-component">
+      <div class="user-component__column">
+        <img class="user-component__avatar-sm" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRISEhISEhISERISGBESEhIREhIRGBQZGhkYGBgcIS4lHB4sHxgZJjgnKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISGjQhJCs0NDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EAD4QAAICAQIDBQUFBQcFAQAAAAECABEDEiEEMUETIlFhgQUycZGhQrHB0fAGI1JichQzgpKy4fEVVKLC0kP/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIEAwX/xAAjEQEBAQEAAgEEAgMAAAAAAAAAARECAyExBCIyQRJRE0Jh/9oADAMBAAIRAxEAPwDkpHpEoI5Z5NcoMGWIEISKo1YVwBCWTgpixwiljAZUIUqS5JRgaLYRrQSIHhREEiMIlEQIqpVRhEoiA0uoJjaglYi0uQw6gGTU0tpAZHlAQlIYMIQVENROkISyEyxKIjADBYQiJKgNJZYNRxEGo9PStMsCHUsCM5UWNUwAJcFyj1SQZIDQKsMCSpYkUosCXUoQoYerWGIAMIRYm01TCBigZYaIzgYUSGha4GMwTKuS4HqpRlsKgXGnVESjLJmDifaAVtCDW/XnpX4kdY+eb1cgktuRrfIqi2IA85iT2gHYqi2AD3j3d66CtxE8LktshcsQ4Zbu6B8uUPEmk2u1EG9htWx+E2cfTT56dZxJ8mY87HSNi7E9xQe7vVeceyBSuPtFfIWOptuzUeF/X1mbEdK5AG2qg3UMTv8AHmb9JqwcMoRSxAJfUWNHTjHRR1PMzv8A4uJPiK/jz/SZVGoKttZqwLs+QhdgwJGk7fxEWT/hsD1m3C6gEYlLFm99iSx25A9F8xF5cbA8kvqezX/U1k+gkXxcf1D/AIc39M3ZMACUevHSdPqeksL1m3h+FyBgexGQc7Vgm3xCrHZsONueLIrUe9rOoD4MKPoZHX0/N/H059eKfpzoNR/EYghUBtdrZ20lT4EdIuZuuLzcrh1zeblARBaNi2k4nQVJUuUTENCVkEIyqho1VySiJRJj1UotUkqSA02pKkEKTo0MlyiZVxDRgy7gAy7lAzVJqirkuKg3VK1SlNb8x1H5yMtbjkeR/D4ybFDDQtUUDITEenDIR+XMfKZW9p4zk7I7ZLG1+8Oum+vlz8L5QtU8t7e4crmRxyYgg+BB3nfwZblPjN9u1xHtHtNSoNA1BNV0x53XhMeDFVsNQo0QevrH8OO0az3qI7189O5B6kjnfUeY31KnLdve6jbSRzIvnz5eHrN/PPM+I75J8ELjvSLAJ3JIsDkCJozENoAABGxO25B2+Q29I5cN3XW+VDne30mnhsQuzWm+Z5Hnc6EAcOWCAD3UUE1QHjX68JrCLtXe5BV5KtbfTxmbPxLsQoJVRbG6Acfeqjn84zHwpyVXaOABsn7sAeNtpBG3SRauNZ1fZIBO2ttIUb9FJv7vSOwWuzW1k0XADZG/lQbVvzJ+dTmN7PQHZXtTS6cnDa1PgtMflQMicQNWjJk4tN6OoMKTrej13i0Om2MEgMQrUD2ae8PiI3CrrzORQaAVxj2HluCNoHD5BjAbHj7QA2OzQ4V6nUe7bHzieL4vI1nR2ZButmFeZPWP0XtvZLQnJ/dgE6nO4G/2uY2HTeef/wCqez1Ix9pkJ/i5mvHecb9ovamYjQQwx6Tt0a+v6M8ebL6rsk31/CT1J18wuuZfl9Q4nhdKjIjB8ZqnGx35WJhJmf2c7Lw6IbvUXo2K8Oe/jGFpj7knXpk75k6yGFoBaAWgFpzqDtUgaI1Sw0QOuXFaoQMWgUkkkNBsG5ZgmStCZLgyGEoFcu4sQwI9C5BLAlVEawa5RyOOW2/NSaU/A9DEyjDRp74qsiyBz2pl+I/HlFGHizstdQOh6fDqPSNZ8bc1IPilf6dh8o8l+CZpz/bCAoCb2ccue4M6joOjA/EFT63t9ZyPbuVsaoQLGuyOe1V+Mvxc3+UxfH5Ro9l4woAU7DeiLBvwPiL6fjNqVVAA2a2B2o3sPX6TFwHHY8mNSvOwHF7jY8xf18Jqx224O5N0PhV3856XMaLWhBttQPLxs79P1yjuHW3CC6A1G/HkAfIc/M7+MzC1J6mq8q/X3zdwqkdoSQXFBRsA5C+6PEnf5S76IfY1qYhfstZHPfu3fQXddIjLh0qVfIuMP3zRZ8j7DvMEs7i69Ki+K4wK9Ma7qbitTMw1bXdbsT/xNXC+1OGQWrBnVt9GN8zBiftZQKUmcv26fph4b+w4wo/es4sKV4YCvMK6mb09pLWldOdBQK5MejKvhVUPUATmcT7bbISDkUq/Jcgw5EIBulIQMNvEn0mrGUzC2RaHJ8eRnyKfMEcuXUxxN/6eMytsqHGzUdOvGrMPILat057ynLONJANWKZVBI+G9egHrIyPQD9m6ltQtSXboK1Gh98MIwoMHxi7DNbsh2rv9B57QtEjz/F+yO1xkAHG6X3X1e75c6+BrpOV7O/Zh8uQC9gRexUUOdHrPd+z+EZXB1UWrTkSnU7/aBE7h4fIoP7tGIDHUhHeIGxobSVPAqhV8mPSQQ2y+AA5QWjHyPkyaidyxRgRRDKxs0ORo+tQuJx1vufSpm8vP7Z/Nx/tGcmCTCIlFZxZw3JqlGC0QM1RiNM2qGjQJquSL1yQPDyZIu4QMjDSSUTKuIChrF3LDRjTSYNwS0HVAaYTIXEQzwC8Q1qGQfwj1J/OTtvJflf3zIHl6o5S1rHEHwX5R78L2uMkBbCvsL32oennOehudXBxS4sRZ13GqiNmonqTsBO/gv3e3Xxe+ngvYiOr5OaqoAK8tw3TzG+3nPb8Em24570OQJu5yeEQ5nORwqjcoqjlt7t+tn9CemyNixIO0IG3LwNcq8eXzm/mtFmC4fhwzHUBvtv8AgfHf6Q86jUCNIJRXU13SShCberGM4JseRe41g8vEGiOsRxOPICGPfJAG4XuDer3+64uuvZ8x5n9ruDzOvaY8blcarqIKcgpDHSDfQTz3sr2hxKI+HCWC5CupQq3YJo2R3Tud59HVuzKkFHGxKkCiehAP3TscHwvA5hugxsp90XoD+IT7JvyhLgs1wfY/sANhTI37sogZ8pZUJoWzWwO5PiPrz9H7P9jghWyOFU+7bP2lUd7IU16D4TTk9n6CqY8mJiG1Mc5Xu1uujGAFsbGyL5VBPCYQS+TMMmQmyyntPiTyA+cW0LzeyNOyvqU7jHldXs+KknUD9Jny+ziq6gpAB3DA7X/Cd9/hses1uuAANeoEe8uNmPkT/wAykRRWTCVbTsyrvanmG6jb6xU4y4OF0brvjf3hpYUetWNutj/mdPh8I3UKCCNmX3SPiDsZmwBS2rGVDEm07oJ35ON/mPCbUVWFqNLqd68fykw68r7Y9mkM+RAe6CXSlJJ8QfP7/jPNswIGldI3NWSQet3PpeTGMgojQ5JFgbhh94M8L7XwNjc9op3+2igKR5gcpHk5vXPpHfP8ucjlFYJE0OlbjcHkYvTMfwxXZ8klYtxNDLFOsNBBWXDqAwjNeuVJUkkNVyi0q4MohEytUomDcWAy5LiS0vVJwjblM8SXgloGNmgFpRaRYjEp8TUIOOgv439wl48QO7GgOgIs+VnlHY8tbJqHlj7przf3j9BKkGDx4MpF9nQ8WQKPm0D2gjsgVgvvCtJDV/lNfPxmhOGY95jjx8tyNbm/C7PqJofHj0lSHZd71toJ231D7K/1ETR45ldfFPueaz8YcDgKP3ZQAMVFh+v68pofKMiBmyayxPcsmrPM38TtO97U9kYjw66KLaSFtR3X6V4ACv0J4k8Lnx+8lgtzva9vHfqOk28307b7dbP7aXAqLiYZMhbScZshR1JI38BU9RwHEs6qzqAGvUN37N7qj3tvUD8JwvZXsdcjDI+MK1DdCSNVEXR2W/QT2+T2AQqkU+MoBrVdGVaF2zciRVb1tY3i7hzqMejtVKbArWxUuCST4b1Xpt1qX/01h3u7rA/ionxK/aHnVETo8LiGMa0LNjewGQqRqoUGDbKd732/E0XtjSv3x0cOrYn8Qj/ZPIryPQ8pznXpcXg4k1pzYSQtDVkZSqV0Dk6gOu/zmxcyNpxlOzJ906hpvoN96MEYTjrVYHLukAI3M1yKg/E/CTMqFFDoGAA3X3feNEVuPH1i0LxcTqJxtQyAkV7rAen68vEExgX2mrHkTdXI06gf5gKMN8SkkklWVQbLEEr1sjcEXz3mXNhyIx0rqB3DhgCw9QQYexo8aLk1MxDMm5ONgHBU8xXKx08vObgyujMo1lBY3LBhU5mLIxYP2ZRxYsd4H+VlG/4S8bDHkJPaC72CEc/h8OsIHRwFCilAAHNgAkaXF2PLpOP7aQOpdxS7hvFHGx+IPP1mo5VcMmp0OrVq7Nlo9CPP4SZs5IWj2iuoDBlot0J8jGp43MiiirageWxBqIqbeMRVZ1AYFW2B8PKZKmDuZ1Y8/wAsk6uAZYtkjyJRElDMccBkmwrAKRhm0STV2ckeHrLLAkEuEAWgkQjKIjBZlGEZUVAWgxhWVUQCRCElQqkgaJfPl08T8I/GxsKmxPUch+fxPpM6mNuhpG5PNvHyHlKlPWpcoU0tk/xXufEk/rpzlsQaBo8jVWB4bHY+syqR6D/yP5R+Px/RMudU+evYn4vIgAvUL2od6q6/rqfhMXG+08j6k7NRfV6N+gmxTZJ8BEvgB73XT4X1lzuu/Pcvqn+x/a2TCP7tGCkGtgWU8wb67/qp67gP2pxkhWGRNQBBC3sa3scyDz67HnU+bcVlCGgCTtdEjmLl8L7YONgpUkahVtdHbpXhO066/p1vMfVk4jGCyoluwJLLapmBsc6rV5H4+c55UOgyHHpfG3cLsQws7qTzT4ixtyoVPOH9p2fEuhdGRXCMSSQvfpSD8r8AfKjyOI/aPiMi43B05MdBsW4GQgb0Op2Jrp03C25dKenteM9ovjC5Ex9oAtOoClwovbRyceQPO6lq5yJjONyMZyKdSEgrZPNG6bHbx+E8Xwftlsj43XSGVrfE3J8TUrMhrmBvp6jY3Qndy5HyBsbZHUEalKAAi1Optt7Vxr03dK+7XQrD17DJxfZse0VShDd/GGLUTvab+p5TJ2jinx5Mb4iRpAtR5g2aB8j8pw/ZnHMxHC8T3WO4yChkTINrNbOhoCx4TpN2mN2Q2yAHvBtN2NrNc/jv8RD5EjovqdTpJx5AAbB7p8CRE5eJdADkTU672jkAj5GJx8foZQ4UD7OSitjqCAe6fHoPO7m/PwwygMD8GU7b/Q+ojUQ2VM6g4yNQ3FEXY6EdYHEpqU42HZvRYU32ruwekbh4dkYguosHdFok/hMfEq4ABJIB1DItk8+o5wpxxPabNdOFY7U9U23O+hnOqdnjayaqN2Nttgw6/hOTUy+bmbrJ9RzlnQNMvTDqVOLOErKqETKuUEqSXckDc4QqgqYUkwmSpdSVAAIlaYRlXFQoyql3LqIB0y6jAssJBIAsMLDCRirHAUEjqoen1MvTK/OVFQQXu/H8/wDYwXFjyNL98Y/IfL5D/cwT7hPUN/6mVz8r5+ZI5eTGGyv1AC8uRoUfv+kwHhrd1G5VS4boHv8AD8J3EUBbHvEFQfPTz+f3zFwfDaF0t72ZqO/Ja7x8th9ZsjbYHhsNFb5ZNTkeBITf0Myjhm09e+V0m/dcHbf0r1nYbFr4gVVEPjCcq2sfHZAY/g+GVkF/9wUAHMkOD99n4RFjz+bAdeoLpJTfp3iOddBPT8DqK4GN6widNsile8reJtWb/F488ePAMmU17vZ5Df8AQQL9bna4HhwowAHdUyCv5iSwr1VYjw7jOGXJoBB7RKKufeoHa2/iAFedb8xOq/aMmtf77EtURYypW6t4zjjOVzJqumJ1VvpIA1en/wArzqdrO5GbSp95NX+UXt6Sv2eK9m5sfEJ3a/mTUCyN8OYiD+5cEkhWFWdRRh5MPdPkYTcGi5GyY1pyNRVdjfivkaP18JqHE/vBiyKNGRQyP4OehHn4xk0unaJaNZrofynOfijjOnICtnax3bPgw5A+cviF7NmFUVGogXe24ZfH4dRHO65X7NqGtCym9jy2HwMcDBxmBGG1qW5Opo6h0PjONnxkMb/Qncx8LkBZXK9mOXMPt4GczjkIPjXJhyI6Tj5ud51z83O8sLRbNGNEvMjCrVLuKJlho9MzVLirkhoZVMYIpY0RKSQiWJDAimgw2EGoEpRGAQRCEShKIxRAWNUwLBKIQEEGWGgBGDIWlKYaRmTl6n8IvI1I39QP4fjL1RWV+h6hvmBf4Tr4/fUdPF+UIU0NIJJKlb8Cas/Sbv7LqIN0qqVH9TCvoD985+MW6nwatvOp1nxEhQPdClm8SzGq9Bc17jdTP7OMYORTbMWC3zUMNIPxoN84L4tCFVXT2bOLHPWwo/SdDhdO+r3FawK5Ilf/AD9Yb4GDY1JHfZ2bzYsD/pB+cKIwcPwxVQapuxAav5qJHrpr5xqYWKiweu/gEFmvidpp4bIGe6JGglvI76R+vGb2UVWw0hdvP3yJMhsOfBpDZjsAwYda2RWr/MflOjxGM9phcHv4gCCOqN0+/wCY8IbBWxhdqKA6f5WAP/qZbsAFyGiFRAfNbqWlfE8OWP7ttOTGrMjfxLfut4jYeomdeKOXGGdFDJfeU0HWyDX8LA9POasWTTquiVLUfHv7/UE/OK4fGu4FBMlgg9GcakI+71EAPi6yJjOohtNBxzDCZMNsFD6WBJ0ZF7pVwORHQ8xLxYa7TGGIAAyonMVQ1KDzrc/OR8gCsVopkPaL1KOta19RZ+ccP4A2fIASw1USGUc9jWtfTepg4kBQBqtX1Mvl5Tr8TzXYb90kcwx5E+U4vtBGxmj3lbU4/lYc6+cnubzYVmzGJzM7RxMU0wV5xDQllaYxRJNUkupI9DEsaDE3LDRSmaDLMFTDEoYAiRVjQsvTAYURIsNlkqI8VIDIYNwKmhpeqKUyzFQMtBDQCZYkkcDMvEklhvVfjNAmHLbNY+yfmQOU0eCfc7eGfc04mAI2+0J0cTk6l5HswfUnacZ2IO38ZX/xM6COdzvagKfIdP15zXWuOwo1VW2tMqf5j3T9PrNDklUY+8um/iaU/rzmPg8wOgddAf470fqBNgcA0a7+9dNzUk8N4YpQPI6aJ8t/16QMmXvMPGz6EV86qIzPpLHn3WWvr+ELiyCWKnmPpfP7orTkEvFHuWdgtHpz2/OPxZNSHH42AT0pgPxnKZiNS/4a8wdvrC4TitlsefUG2ZT94jlGOo7kjJpPVifEMQr7eob5xgyEdnR5our+pHDKR9R8DMBzd+xtqc/RiPuYx2LPRo8kGxPid/uqPSxrLaspda911PlSj85mwOAWDclYMPO1Ir6mCmbRZPvNkr5/7CJ4hDRG4LMLYdLNCOU8aX4gs2N6tS5VvIHYX61MvtosSwr3Tq253XKvAixNXDbbqQyjSrr1CncOPWTjyXKEDTkW1P8AOB09RuPhH+k/twWTTt4fdFOJq4sd6/IRJEwdzOrGDuZ1SgsICEFhSEl1LlyRByjIssygI5Dw1TGrFJGJKVDhLlCWYKwJEAw4toYWBJlCSQQxNEIUoS4qmgMISiJcklk1cy8BZrrqb7zUPjX0ofPaZeBy6d/IsB5jlNng59WtXgnq11XwqQ+109qfPlBTKNe/uZU0mvH/AJAjsKE1fIFQfMsBMLrR0MDo7QqGHNHrb0M7VpjfjY41BP8A+bVf8jH85vOaqNXQr4rW9Th8PxLmgxFkHG1irPQzp4uK27wJ0nSwHNT4jxE56rHRxEPfUMobfwo1Eo5AArbTz52VI2PyjeCYHU1g6NgejId+fqflLTHaungxXzB1Aj6GoYHK4vIVLHoWJHibBl43oVe40n0AuN48UoBG4sX4k1v8h9ZhRie6otuvkPOM42o+9mxpFfEmrIm1H7pdjQI2HM3W0wphYDcgEDfyuNxYtWwsiq2ugB58oQGcO57gIByKxYjnpc9T06zVizDUw3OjSDfNnP6+kViQAlVAUAXQ6bbRZGhmZjsWDWBuSevntKlJ100r2eQDYWh/mTw8+Rk9o4wzEA81DoeoI3qUzjRkUcseU0OZ0surl6wc5JTG47y1Ro7gVzHjLS5HELqXV1Jv85lnTfhdKlRyLXv02nLYzL9RzllZPNz92rJgFpGaKdpmrgLVJFapJIIKywskkuKWqw1kklnDLkJkkgoNwTJJEAmS5JI0dJcsGSSTUVdyXJJJDD7QN6V9YXCKBz32ArzMkk3+H8I2+L8Y6fDvYJ8coA+CgfjK4zBpOQHcZBt5Pdg/hJJKrtCOK06txSuFI60wG8mLPpLY8m4YUGHO+lypJFW6HDZyi0SaLEHkR8QOk7HB6CNYBBtQw6WCKMkkXPyOvgrjOE1tk1H+7CNz2Pe730AnNbKNTdmoA5k0BQHKVJHU8mcOnJm3ZgSR0C/nGDMSNjzNeAkkhFNPD7X5jc72SB90vOCVU+Nt/lWxKklxNdPhSNWQnk2RR6FdovFiCrmQGgj2F6K3PbyIkklz4RflnVtWoD+pb/hO4HobnDyggm+dmSScPqPxcfN+JLNFEySTCyJJJJGH/9k=">
+        <div class="user-component__text">
+          <h4 class="user-component__name-not-bold">Channel</h4>
+          <!-- <h6 class="user-component__subtitle">hello</h6> -->
+        </div>
+      </div>
+      <div class="user-component__column">
+        <span>2</span><i class="fas fa-chevron-right fa-xs"></i>
+      </div>
+    </div>
+  </main>
+  
+
+  <nav class="nav">
+    <ul class="nav__ul">
+      <li class="nav__btn"><a class="nav__link" href="./friends.html"><i class="fas fa-users fa-lg"></i></a></li>
+      <li class="nav__btn">
+        <span class="nav__notification">1</span>
+        <a class="nav__link" href="#">
+          <i class="far fa-comment fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="#">
+          <i class="fas fa-search fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+          <span class="nav__new"></span>
+        <a class="nav__link" href="#">
+          <i class="fas fa-ellipsis-h fa-lg"></i>
+        </a></li>
+    </ul>
+  </nav>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <script>
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    document.querySelector('.js-time').textContent = `${hour} : ${minute}`
+  </script>
+</body>
+</html>
