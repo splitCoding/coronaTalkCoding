@@ -7,6 +7,9 @@
 @import 'component/nav.css';
 @import 'component/user-component.css';
 
+@import 'screen/find-header.css';
+@import 'screen/find-recommended-friends.css';
+@import 'screen/find-open-chat.css';
 @import 'screen/friends.css';
 @import 'screen/login-form.css';
  

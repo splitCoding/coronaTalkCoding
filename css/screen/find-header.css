@@ -1,0 +1,22 @@
+.find-header{
+  margin : 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.find-header > div{
+  width : 25vw;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color : rgba(0,0,0,0.7);
+}
+.find-header__icon{
+  margin-bottom:18px;
+}
+.find-header__text{
+  height : 24px;
+  display : flex;
+  align-items: center;
+  font-size : 12px;
+}

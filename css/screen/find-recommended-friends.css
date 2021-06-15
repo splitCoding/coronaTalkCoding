@@ -1,0 +1,15 @@
+.find-recommended-friends{
+  margin : 0px 10px;
+  color : rgba(0,0,0,0.5);
+  border-top:1px solid rgba(0,0,0,0.1);
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.find-recommended-friends__title{
+  margin-top : 12px;
+  font-size : 12px;
+}
+.find-recommended-friends__text{
+  padding : 12vh 0px;
+  text-align: center;
+  font-size : 14px;
+}
