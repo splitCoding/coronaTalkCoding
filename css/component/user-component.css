@@ -19,6 +19,14 @@
   color : rgba(0,0,0,0.5);
   font-size: 13px;
 }
+.user-component__column__chats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-end;
+  color : rgba(0,0,0,0.5);
+  font-size: 13px;
+}
 .user-component__column:nth-child(2) span{
   margin-right : 5px;
 }
@@ -50,7 +58,19 @@
   color : rgba(0,0,0,0.7);
 }
 .user-component__subtitle{
-  color : rgba(0,0,0,0.6);
+  color : rgba(0,0,0,0.4);
   margin-top :7px;
   font-size : 15px;
+}
+.user-component__notification{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 17px;
+  height : 17px;
+  color : white;
+  font-weight: 400;
+  margin-top : 7px;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet"/>
+  <title>Friends-CoronaTalk</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>Not Infected</span>
+      <i class="fas fa-biohazard"></i>
+    </div>
+    <div class="status-bar__column">
+      <span class="js-time">00:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-syringe"></i>
+    </div>
+  </div>
+  
+  <header class="screen-header">
+    <h1 class="screen-header__title">Chats</h1>
+    <div class="screen-header__icon">
+      <span><a href="#"><i class="fas fa-search"></i></a></span>
+      <span><a href="#"><i class="far fa-comment-dots"></i></a></span>
+      <span><a href="#"><i class="fas fa-music"></i></a></span>
+      <span><a href="#"><i class="fas fa-cog"></i></a></span>
+    </div>
+  </header>
+
+  <main class="main-screen">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img class="user-component__avatar-sm" src="https://mblogthumb-phinf.pstatic.net/MjAxODA1MjRfNDIg/MDAxNTI3MTY0MTUwMzQ1.DmEjivAyLPbRPK_WAfItfke5ouwPL8VuUr35EnWn69wg.llCyonIYx7kR0m7u8gTivPnJSZz5aD7ZhfzU9y5sGdYg.PNG.petal_rain/20180524_210138.png?type=w800">
+        <div class="user-component__text">
+          <h4 class="user-component__name">SangHyeon</h4>
+          <h6 class="user-component__subtitle">hello everybody it's clone</h6>
+        </div>
+      </div>
+      <div class="user-component__column__chats">
+        <div class="user-component__time">17:55</div>
+        <div class="user-component__notification">1</div>
+      </div>
+    </div>
+  </main>
+  <nav class="nav">
+    <ul class="nav__ul">
+      <li class="nav__btn"><a class="nav__link" href="./friends.html"><i class="far fa-user fa-lg"></i></a></li>
+      <li class="nav__btn">
+        <span class="nav__notification">1</span>
+        <a class="nav__link" href="chat.html">
+          <i class="fas fa-comment fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="far fa-question-circle fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+          <span class="nav__new"></span>
+        <a class="nav__link" href="more.html">
+          <i class="fas fa-ellipsis-h fa-lg"></i>
+        </a></li>
+    </ul>
+  </nav>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <script>
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    document.querySelector('.js-time').textContent = `${hour} : ${minute}`
+  </script>
+</body>
+</html>
