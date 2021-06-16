@@ -6,15 +6,52 @@
 @import 'component/main-header.css';
 @import 'component/nav.css';
 @import 'component/user-component.css';
+@import 'component/notification.css';
 
 @import 'screen/find-header.css';
 @import 'screen/find-recommended-friends.css';
 @import 'screen/find-open-chat.css';
 @import 'screen/friends.css';
 @import 'screen/login-form.css';
+@import 'screen/more-iconlist.css';
  
 body{
   height : 200vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(255, 242, 242);
+}
+.more-suggestions{
+  margin : 30px 20px 0px 20px;
+  padding-top : 16px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.more-suggestions__header{
+  font-size : 13px; 
+  font-weight: 500;
+  color : rgba(0,0,0,0.9);
+  margin-bottom : 16px;
+}
+.more-suggestions__content{
+  display : flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items : center;
+}
+.more-suggestions__list{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width : 25%;
+}
+.more-suggestions__list__icon{
+  width : 45px;
+  height : 45px;
+  border-radius : 7px;
+  margin-bottom : 10px;
+}
+.more-suggestions__list__text{
+  font-size : 12px;
+  color : rgba(0,0,0,0.5);
 }

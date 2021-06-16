@@ -58,9 +58,25 @@
   color : rgba(0,0,0,0.7);
 }
 .user-component__subtitle{
+  display : flex;
+  flex-direction: row;
+  align-items: center;
   color : rgba(0,0,0,0.4);
   margin-top :7px;
   font-size : 15px;
+}
+.user-component__subtitle span{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  width : 10px;
+  height : 10px;
+  margin-left: 4px;
+  padding : 6px;
+  font-size : 6px;
+  border : 1px solid tomato;
+  border-radius: 50%;
+  color : tomato;
 }
 .user-component__notification{
   display : flex;

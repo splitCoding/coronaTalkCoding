@@ -1,0 +1,28 @@
+.more-iconlist{
+  display : flex;
+  flex-direction: column;
+}
+.more-iconlist__first-line{
+  display : flex;
+  flex-direction: row;
+  margin : 30px 0px 40px 0px;
+}
+.more-iconlist__second-line{
+  display : flex;
+  flex-direction: row;
+}
+.more-iconlist__icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color : rgba(0,0,0,0.7);
+  width : 25vw;
+}
+.more-iconlist__icon__img{
+  margin-bottom : 8px;
+}
+.more-iconlist__icon__text{
+  font-size :12px;
+}

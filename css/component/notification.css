@@ -1,0 +1,40 @@
+.notification__nav__number{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 17px;
+  height : 17px;
+  color : white;
+  font-weight: 700;
+  position : absolute;
+  font-size : 13px;
+  right : -10px;
+  top : -10px;
+}
+.notification__nav__circle{
+  display : inline-block;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 5px;
+  height : 5px;
+  position :absolute;
+  right : -4px;
+  top : -5px;
+}
+
+.relative{
+  position : relative;
+}
+
+.notification__header__circle{
+  display : inline-block;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 5px;
+  height : 5px;
+  position :absolute;
+  right : -5px;
+  top : -3px;
+}

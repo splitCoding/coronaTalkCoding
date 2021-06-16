@@ -1,4 +1,5 @@
 .nav{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position : fixed;
   bottom : 0;
   border-top : 1px solid rgba(0,0,0,0.1);
@@ -9,37 +10,12 @@
   display: flex;
   justify-content: space-between;
 }
-.nav__btn{
+.nav__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   width : 25vw;
-  position : relative;
 }
 .nav__link{
   color : rgba(0, 0, 0, 0.6);
-}
-.nav__notification{
-  display : flex;
-  justify-content: center;
-  align-items: center;
-  background-color: tomato;
-  border-radius: 10px;
-  width : 19px;
-  height : 19px;
-  color : white;
-  font-weight: 400;
-  position : absolute;
-  right : 32px;
-  bottom : 9px;
-}
-.nav__new{
-  display : inline-block;
-  background-color: tomato;
-  border-radius: 10px;
-  width : 5px;
-  height : 5px;
-  position :absolute; 
-  right :35px;
-  top : -6px;
 }
