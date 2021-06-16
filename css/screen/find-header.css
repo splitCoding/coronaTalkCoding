@@ -1,7 +1,18 @@
+.find__notification{
+  display : inline-block;
+  background-color: tomato;
+  border-radius: 10px;
+  width : 5px;
+  height : 5px;
+  position :absolute; 
+  top : 44px;
+
+}
 .find-header{
   margin : 20px 0px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .find-header > div{
   width : 25vw;
