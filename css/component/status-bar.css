@@ -6,6 +6,7 @@
   align-items: center;
   font-size : 13px;
   padding : 5px 0px;
+  background-color: #FFF1F2;
 }
 .status-bar__column{
   width : 33vw;

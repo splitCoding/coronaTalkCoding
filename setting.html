@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet"/>
+  <title>Chats-CoronaTalk</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>Not Infected</span>
+      <i class="fas fa-biohazard"></i>
+    </div>
+    <div class="status-bar__column">
+      <span class="js-time">00:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-syringe"></i>
+    </div>
+  </div>
+  
+  <header class="setting-header">
+    <div class="setting-header__content">
+      <i class="fas fa-chevron-left fa-lg"></i>
+    </div>
+    <div class="setting-header__content">
+      Setting
+    </div>
+    <div class="setting-header__content">
+      <a href="#"><i class="fas fa-search fa-lg"></i></a>
+    </div>
+  </header>
+  <main>
+    <div class="setting-firstlist">
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-volume-up fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Notices
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle"></div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-flask fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Kakao Lab
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle"></div>
+        </div>        
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-exclamation-circle fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Version
+          </div>
+        </div>
+        <div class="setting-list-right-item__right">
+          <div class="setting-list-item__subtitle">
+            Latest Version
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="setting-secondlist">
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-lock fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Privacy
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="far fa-bell fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Notifications
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="far fa-user fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Friends
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="far fa-comment fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Chats
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-tv fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name relative">
+            Display
+            <div class="notification__setting__new">N</div>
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-palette fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name relative">
+            Themes
+            <div class="notification__setting__new">N</div>
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+          </div>
+        </div>
+      </div>
+      <div class="setting-list-item">
+        <div class="setting-list-item__left">
+          <div class="setting-list-item__icon">
+            <i class="fas fa-phone-alt fa-lg"></i>
+          </div>
+          <div class="setting-list-item__name">
+            Call
+          </div>
+        </div>
+        <div class="setting-list-item__right">
+          <div class="setting-list-item__subtitle">
+            Default theme
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+  
+  
+  <nav class="nav">
+    <ul class="nav__ul">
+      <li class="nav__btn"><a class="nav__link" href="./friends.html"><i class="fas fa-user fa-lg"></i></a></li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chat.html">
+          <i class="far fa-comment fa-lg relative">
+            <span class="notification__nav__number">1</span>
+          </i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="far fa-question-circle fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <i class="fas fa-ellipsis-h fa-lg relative">
+            <span class="notification__nav__circle"></span>
+          </i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <script>
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    document.querySelector('.js-time').textContent = `${hour} : ${minute}`
+  </script>
+</body>
+</html>

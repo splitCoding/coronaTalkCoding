@@ -23,7 +23,21 @@
   right : -4px;
   top : -5px;
 }
-
+.notification__setting__new{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 50%;
+  width : 17px;
+  height : 17px;
+  color : white;
+  font-weight: 700;
+  position : absolute;
+  top : -1px;
+  right : -25px;
+  font-size : 10px;
+}
 .relative{
   position : relative;
 }
