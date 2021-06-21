@@ -27,3 +27,26 @@
 .friends-screen__channel__header__icon{
   font-size: 12px;
 }
+@keyframes hideSplashScreen {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen{
+  background-color: #FAE104;
+  width : 100vw;
+  height : 100vh;
+  position :absolute;
+  top :0;
+  left : 0;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}

@@ -17,3 +17,14 @@
 .relative{
   display: relative;
 }
+@keyframes screenHeaderIconRotate {
+  form{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icon i:hover{
+  animation : screenHeaderIconRotate 2s ease-in-out infinite
+}
