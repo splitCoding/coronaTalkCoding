@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet"/>
+  <title>Chat-screen-CoronaTalk</title>
+</head>
+<body class="chat-screen-color">
+  <div class="status-bar chat-screen-color">
+    <div class="status-bar__column">
+      <span>Not Infected</span>
+      <i class="fas fa-biohazard"></i>
+    </div>
+    <div class="status-bar__column">
+      <span class="js-time">00:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-syringe"></i>
+    </div>
+  </div>
+  
+  <header class="changeable-header chat-screen-color">
+    <div class="changeable-header__content">
+      <a href="chat.html">
+        <i class="fas fa-chevron-left fa-lg"></i>
+      </a>
+    </div>
+    <div class="changeable-header__content">
+      SangHyeon
+    </div>
+    <div class="changeable-header__content">
+      <a href=""><i class="fas fa-search"></i></a>
+      <a href=""><i class="fas fa-align-justify"></i></a>
+    </div>
+  </header>
+  <main>
+    <div class="time-stamp-container">
+      <div class="time-stamp">
+        Tuesday,June 30,2020
+      </div>
+    </div>
+    <div class="message-container">
+      <div class="message-row">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg">
+        <div class="message-row__text">
+          <div class="message-row__text__name">Otter</div>
+          <div class="message-row__text__chat">
+            <div class="message-row__text__message">Am i Cute?</div>
+            <div class="message-row__text__time">21:27</div>
+          </div>
+        </div>
+      </div>
+      <div class="message-row-own">
+        <div class="message-row__text__message">Yes you're cute</div>
+        <div class="message-row__text__time">21:27</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <script>
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    document.querySelector('.js-time').textContent = `${hour} : ${minute}`
+  </script>
+</body>
+</html>

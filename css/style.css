@@ -7,6 +7,7 @@
 @import 'component/nav.css';
 @import 'component/user-component.css';
 @import 'component/notification.css';
+@import 'component/changeable-header.css';
 
 @import 'screen/find-header.css';
 @import 'screen/find-recommended-friends.css';
@@ -15,9 +16,79 @@
 @import 'screen/login-form.css';
 @import 'screen/more-iconlist.css';
 @import 'screen/more-suggestion.css';
-@import 'screen/setting-header.css';
+@import 'screen/setting-list.css';
  
 body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgb(255, 242, 242);
+}
+.chat-screen-color{
+  background-color: #A8C1CD;
+}
+.time-stamp-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-stamp{
+  display: inline-block;
+  margin-top : 85px;
+  background-color: #94A4B2;
+  padding : 11px;
+  color : #F8FCFE;
+  font-size: 13px;
+  border-radius : 17px;
+}
+.message-container{
+  height : 1200vh;
+  display: flex;
+  flex-direction: column;
+  padding : 20px 10px 0px 10px;
+}
+.message-row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom : 20px;
+}
+.message-row img{
+  width : 45px;
+  height : 45px;
+  border-radius : 18px;
+}
+.message-row__text{
+  display: flex;
+  flex-direction: column;
+  margin-left : 8px;
+}
+.message-row__text__name{
+  color : rgba(0,0,0,0.8);
+  font-size: 13px;
+  margin-bottom : 6px;
+}
+.message-row__text__chat{
+  display : flex;
+  flex-direction : row;
+  align-items: flex-end;
+}
+.message-row__text__message{
+  background-color: white;
+  padding : 10px 12px;
+  font-size: 14px;
+  border-radius : 0px 13px 13px 13px;
+  margin-right : 5px;
+}
+.message-row__text__time{
+  font-size: 12px;
+  color : rgba(0,0,0,0.4);
+}
+
+.message-row-own{
+  display : flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.message-row-own .message-row__text__message{
+  border-radius : 13px 0px 13px 13px;
+  background-color: #FDE403;
+  margin-left : 5px;
 }
